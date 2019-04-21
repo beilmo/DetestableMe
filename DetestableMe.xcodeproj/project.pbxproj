@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D04D9097226C849D002BDF5C /* Permissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04D9096226C849D002BDF5C /* Permissions.swift */; };
 		D067411E223C138E009AA9F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D067411D223C138E009AA9F4 /* AppDelegate.swift */; };
 		D0674120223C138E009AA9F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D067411F223C138E009AA9F4 /* ViewController.swift */; };
 		D0674123223C138E009AA9F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0674121223C138E009AA9F4 /* Main.storyboard */; };
 		D0674125223C138F009AA9F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0674124223C138F009AA9F4 /* Assets.xcassets */; };
 		D0674128223C138F009AA9F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0674126223C138F009AA9F4 /* LaunchScreen.storyboard */; };
 		D0674133223C138F009AA9F4 /* DetestableMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0674132223C138F009AA9F4 /* DetestableMeTests.swift */; };
-		D067413E223C138F009AA9F4 /* DetestableMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D067413D223C138F009AA9F4 /* DetestableMeUITests.swift */; };
+		D067413E223C138F009AA9F4 /* HandlePermisionAlertsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D067413D223C138F009AA9F4 /* HandlePermisionAlertsUITests.swift */; };
+		D067414C223C1812009AA9F4 /* Springboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D067414B223C1812009AA9F4 /* Springboard.swift */; };
+		D067414E223C1B1A009AA9F4 /* XCUIElement+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D067414D223C1B1A009AA9F4 /* XCUIElement+Utils.swift */; };
+		D0674150223C1B7D009AA9F4 /* XCTestCase+AlertInterruptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D067414F223C1B7D009AA9F4 /* XCTestCase+AlertInterruptions.swift */; };
+		D0674152223C1F45009AA9F4 /* Bundle+Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0674151223C1F45009AA9F4 /* Bundle+Info.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D04D9096226C849D002BDF5C /* Permissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permissions.swift; sourceTree = "<group>"; };
 		D067411A223C138D009AA9F4 /* DetestableMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DetestableMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D067411D223C138E009AA9F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D067411F223C138E009AA9F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,8 +51,12 @@
 		D0674132223C138F009AA9F4 /* DetestableMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetestableMeTests.swift; sourceTree = "<group>"; };
 		D0674134223C138F009AA9F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0674139223C138F009AA9F4 /* DetestableMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DetestableMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D067413D223C138F009AA9F4 /* DetestableMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetestableMeUITests.swift; sourceTree = "<group>"; };
+		D067413D223C138F009AA9F4 /* HandlePermisionAlertsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandlePermisionAlertsUITests.swift; sourceTree = "<group>"; };
 		D067413F223C138F009AA9F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D067414B223C1812009AA9F4 /* Springboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Springboard.swift; sourceTree = "<group>"; };
+		D067414D223C1B1A009AA9F4 /* XCUIElement+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIElement+Utils.swift"; sourceTree = "<group>"; };
+		D067414F223C1B7D009AA9F4 /* XCTestCase+AlertInterruptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+AlertInterruptions.swift"; sourceTree = "<group>"; };
+		D0674151223C1F45009AA9F4 /* Bundle+Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Info.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +84,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D04D9094226C810C002BDF5C /* XCTestExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				D067414D223C1B1A009AA9F4 /* XCUIElement+Utils.swift */,
+				D067414F223C1B7D009AA9F4 /* XCTestCase+AlertInterruptions.swift */,
+			);
+			path = XCTestExtensions;
+			sourceTree = "<group>";
+		};
+		D04D9095226C813C002BDF5C /* FoundationExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				D0674151223C1F45009AA9F4 /* Bundle+Info.swift */,
+			);
+			path = FoundationExtensions;
+			sourceTree = "<group>";
+		};
 		D0674111223C138D009AA9F4 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +130,7 @@
 				D0674124223C138F009AA9F4 /* Assets.xcassets */,
 				D0674126223C138F009AA9F4 /* LaunchScreen.storyboard */,
 				D0674129223C138F009AA9F4 /* Info.plist */,
+				D04D9096226C849D002BDF5C /* Permissions.swift */,
 			);
 			path = DetestableMe;
 			sourceTree = "<group>";
@@ -119,8 +147,11 @@
 		D067413C223C138F009AA9F4 /* DetestableMeUITests */ = {
 			isa = PBXGroup;
 			children = (
-				D067413D223C138F009AA9F4 /* DetestableMeUITests.swift */,
 				D067413F223C138F009AA9F4 /* Info.plist */,
+				D067413D223C138F009AA9F4 /* HandlePermisionAlertsUITests.swift */,
+				D067414B223C1812009AA9F4 /* Springboard.swift */,
+				D04D9095226C813C002BDF5C /* FoundationExtensions */,
+				D04D9094226C810C002BDF5C /* XCTestExtensions */,
 			);
 			path = DetestableMeUITests;
 			sourceTree = "<group>";
@@ -193,13 +224,16 @@
 				TargetAttributes = {
 					D0674119223C138D009AA9F4 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					D067412D223C138F009AA9F4 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = D0674119223C138D009AA9F4;
 					};
 					D0674138223C138F009AA9F4 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = D0674119223C138D009AA9F4;
 					};
 				};
@@ -257,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0674120223C138E009AA9F4 /* ViewController.swift in Sources */,
+				D04D9097226C849D002BDF5C /* Permissions.swift in Sources */,
 				D067411E223C138E009AA9F4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,7 +308,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D067413E223C138F009AA9F4 /* DetestableMeUITests.swift in Sources */,
+				D0674150223C1B7D009AA9F4 /* XCTestCase+AlertInterruptions.swift in Sources */,
+				D0674152223C1F45009AA9F4 /* Bundle+Info.swift in Sources */,
+				D067413E223C138F009AA9F4 /* HandlePermisionAlertsUITests.swift in Sources */,
+				D067414E223C1B1A009AA9F4 /* XCUIElement+Utils.swift in Sources */,
+				D067414C223C1812009AA9F4 /* Springboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,7 +480,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.beilmo.DetestableMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -459,7 +498,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.beilmo.DetestableMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -479,7 +518,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.beilmo.DetestableMeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DetestableMe.app/DetestableMe";
 			};
@@ -500,7 +539,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.beilmo.DetestableMeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DetestableMe.app/DetestableMe";
 			};
@@ -520,7 +559,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.beilmo.DetestableMeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = DetestableMe;
 			};
@@ -540,7 +579,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.beilmo.DetestableMeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = DetestableMe;
 			};
